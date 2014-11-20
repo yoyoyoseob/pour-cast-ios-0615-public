@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		281FFDA5CB89424ABCD9EE37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F17B699B57471BBFAE4207 /* main.m */; };
+		323FF4BE34C9F04EB112F90B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4582F8580AD8AAC13746C15 /* libPods.a */; };
 		3E2E3C0B0A9049909C217755 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CEF5F56BD54A13B7ECE704 /* FISAppDelegate.m */; };
 		AC54A0AD64CD951218E95307 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5DFA5E3767BFDDAB27D700 /* libPods-unit_tests.a */; };
 		AF2F896A020C405DB0266B43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E464B0A5CDB40B3B4639FB0 /* Images.xcassets */; };
+		D8C986B71A1CED800093C217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C986B61A1CED800093C217 /* Main.storyboard */; };
+		D8C986BF1A1CFB000093C217 /* FISViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C986BE1A1CFB000093C217 /* FISViewController.m */; };
+		D8C986F41A1E48E10093C217 /* ForcastAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C986F31A1E48E10093C217 /* ForcastAPIClient.m */; };
+		D8C986F61A1E490B0093C217 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C986F51A1E490B0093C217 /* CoreLocation.framework */; };
 		EBED90A52BE94426B7277246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146E6D8283F344F296BD9263 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,14 +36,23 @@
 		1E464B0A5CDB40B3B4639FB0 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22AACF9A781741F0A4E51348 /* pour-cast-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pour-cast-Prefix.pch"; sourceTree = "<group>"; };
 		2331F85C6BF04EA89B75056E /* pour-cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pour-cast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3854DD3B0BE48AF9A8D284DB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		631C576CA66C4475BCCEE050 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8181CF74841D4451BEEFEFD8 /* pour-cast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "pour-cast-Info.plist"; sourceTree = "<group>"; };
+		8230D2B818F29F32B89DDF02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A8F17B699B57471BBFAE4207 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B18E84164FF1D1A7B7C7BF94 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B390047BAEC1439AAFDE28AF /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		D7CEF5F56BD54A13B7ECE704 /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
+		D8C986B61A1CED800093C217 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		D8C986BD1A1CFB000093C217 /* FISViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISViewController.h; sourceTree = "<group>"; };
+		D8C986BE1A1CFB000093C217 /* FISViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISViewController.m; sourceTree = "<group>"; };
+		D8C986F21A1E48E10093C217 /* ForcastAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForcastAPIClient.h; path = ../ForcastAPIClient.h; sourceTree = "<group>"; };
+		D8C986F31A1E48E10093C217 /* ForcastAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForcastAPIClient.m; path = ../ForcastAPIClient.m; sourceTree = "<group>"; };
+		D8C986F51A1E490B0093C217 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E2055F6B601D4272AD7CA6E3 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		E3A1079BED2240F69AEBAC70 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		F4582F8580AD8AAC13746C15 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C986F61A1E490B0093C217 /* CoreLocation.framework in Frameworks */,
 				EBED90A52BE94426B7277246 /* Foundation.framework in Frameworks */,
+				323FF4BE34C9F04EB112F90B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +147,10 @@
 		EEFD7489EF6545918B374B64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8C986F51A1E490B0093C217 /* CoreLocation.framework */,
 				F4FE2508C9A24FA883AD0AA2 /* iOS */,
 				0C5DFA5E3767BFDDAB27D700 /* libPods-unit_tests.a */,
+				F4582F8580AD8AAC13746C15 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,6 +160,8 @@
 			children = (
 				0B5B6EFE9C2339CF57C20274 /* Pods-unit_tests.release.xcconfig */,
 				B18E84164FF1D1A7B7C7BF94 /* Pods-unit_tests.debug.xcconfig */,
+				3854DD3B0BE48AF9A8D284DB /* Pods.release.xcconfig */,
+				8230D2B818F29F32B89DDF02 /* Pods.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -157,6 +177,11 @@
 		FD076FDA681E45DC953CA937 /* pour-cast */ = {
 			isa = PBXGroup;
 			children = (
+				D8C986F21A1E48E10093C217 /* ForcastAPIClient.h */,
+				D8C986F31A1E48E10093C217 /* ForcastAPIClient.m */,
+				D8C986B61A1CED800093C217 /* Main.storyboard */,
+				D8C986BD1A1CFB000093C217 /* FISViewController.h */,
+				D8C986BE1A1CFB000093C217 /* FISViewController.m */,
 				B390047BAEC1439AAFDE28AF /* FISAppDelegate.h */,
 				D7CEF5F56BD54A13B7ECE704 /* FISAppDelegate.m */,
 				515F21C34F194FB8A01DB0B2 /* Resources */,
@@ -191,10 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BFC5F6F8E6D49139EFCF501 /* Build configuration list for PBXNativeTarget "pour-cast" */;
 			buildPhases = (
+				F4867B1C1DF7F40C3B5C5C3F /* Check Pods Manifest.lock */,
 				6A2DB960E5E449FE91666C16 /* Sources */,
 				182C7F9FD0D943128A6C317F /* Frameworks */,
 				39AB497BB94F4451B8A1B5E0 /* Resources */,
 				46E4D3C65EAE4F20AE4BBAF4 /* Warn for TODO and FIXME comments */,
+				9F6C6CCD3485DA6F83A07264 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2F896A020C405DB0266B43 /* Images.xcassets in Resources */,
+				D8C986B71A1CED800093C217 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +309,37 @@
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
+		9F6C6CCD3485DA6F83A07264 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A659D35A1AFA6A4C083B5D9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4867B1C1DF7F40C3B5C5C3F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,8 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C986F41A1E48E10093C217 /* ForcastAPIClient.m in Sources */,
 				3E2E3C0B0A9049909C217755 /* FISAppDelegate.m in Sources */,
 				281FFDA5CB89424ABCD9EE37 /* main.m in Sources */,
+				D8C986BF1A1CFB000093C217 /* FISViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +460,7 @@
 		};
 		A72DDED866C74EE5AD446408 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3854DD3B0BE48AF9A8D284DB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -493,6 +554,7 @@
 		};
 		E3EFD0F67B1A42048D29B650 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8230D2B818F29F32B89DDF02 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
