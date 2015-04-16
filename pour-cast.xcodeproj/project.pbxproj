@@ -12,6 +12,7 @@
 		3E2E3C0B0A9049909C217755 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CEF5F56BD54A13B7ECE704 /* FISAppDelegate.m */; };
 		AC54A0AD64CD951218E95307 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5DFA5E3767BFDDAB27D700 /* libPods-unit_tests.a */; };
 		AF2F896A020C405DB0266B43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E464B0A5CDB40B3B4639FB0 /* Images.xcassets */; };
+		BD03974C1AE03FC000115DFB /* FISDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = BD03974B1AE03FC000115DFB /* FISDailyForecast.m */; };
 		D8C986B71A1CED800093C217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C986B61A1CED800093C217 /* Main.storyboard */; };
 		D8C986BF1A1CFB000093C217 /* FISViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C986BE1A1CFB000093C217 /* FISViewController.m */; };
 		D8C986F41A1E48E10093C217 /* ForcastAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C986F31A1E48E10093C217 /* ForcastAPIClient.m */; };
@@ -43,6 +44,8 @@
 		A8F17B699B57471BBFAE4207 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B18E84164FF1D1A7B7C7BF94 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B390047BAEC1439AAFDE28AF /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
+		BD03974A1AE03FC000115DFB /* FISDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISDailyForecast.h; sourceTree = "<group>"; };
+		BD03974B1AE03FC000115DFB /* FISDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISDailyForecast.m; sourceTree = "<group>"; };
 		D7CEF5F56BD54A13B7ECE704 /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		D8C986B61A1CED800093C217 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		D8C986BD1A1CFB000093C217 /* FISViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISViewController.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				D8C986BE1A1CFB000093C217 /* FISViewController.m */,
 				B390047BAEC1439AAFDE28AF /* FISAppDelegate.h */,
 				D7CEF5F56BD54A13B7ECE704 /* FISAppDelegate.m */,
+				BD03974A1AE03FC000115DFB /* FISDailyForecast.h */,
+				BD03974B1AE03FC000115DFB /* FISDailyForecast.m */,
 				515F21C34F194FB8A01DB0B2 /* Resources */,
 			);
 			path = "pour-cast";
@@ -363,6 +368,7 @@
 			files = (
 				D8C986F41A1E48E10093C217 /* ForcastAPIClient.m in Sources */,
 				3E2E3C0B0A9049909C217755 /* FISAppDelegate.m in Sources */,
+				BD03974C1AE03FC000115DFB /* FISDailyForecast.m in Sources */,
 				281FFDA5CB89424ABCD9EE37 /* main.m in Sources */,
 				D8C986BF1A1CFB000093C217 /* FISViewController.m in Sources */,
 			);

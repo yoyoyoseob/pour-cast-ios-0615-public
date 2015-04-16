@@ -10,5 +10,5 @@
 #import <CoreLocation/CoreLocation.h>
 @interface ForcastAPIClient : NSObject
 
-+ (void) getForecastForCoordinate:(CLLocationCoordinate2D)location Completion:(void (^)(NSArray *dailyForecast))completion;
++ (void) getForecastForCoordinate:(CLLocationCoordinate2D)location Completion:(void (^)(NSArray *dailyForecastModels))completion;
 @end

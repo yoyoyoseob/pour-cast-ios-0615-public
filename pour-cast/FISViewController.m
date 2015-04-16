@@ -8,6 +8,7 @@
 
 #import "FISViewController.h"
 #import "ForcastAPIClient.h"
+#import "FISDailyForecast.h"
 
 @interface FISViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *dayOneName;
@@ -34,61 +35,53 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    [ForcastAPIClient getForecastForCoordinate:CLLocationCoordinate2DMake(37.8267, -122.423) Completion:^(NSArray *dailyForecast) {
-
-        NSDictionary *dayOne = dailyForecast[1];
-        NSInteger time = [dayOne[@"time"] integerValue];
+    [ForcastAPIClient getForecastForCoordinate:CLLocationCoordinate2DMake(37.8267, -122.423) Completion:^(NSArray *dailyForecastModels) {
         NSDateFormatter *format = [[NSDateFormatter alloc] init];
-
         [format setDateFormat:@"MM/dd"];
-        NSDate *dateTime = [NSDate dateWithTimeIntervalSince1970:time];
-        NSString *maxTemp = [NSString stringWithFormat:@"High: %@F",dayOne[@"temperatureMax"]];
-        NSString *minTemp = [NSString stringWithFormat:@"Low: %@F",dayOne[@"temperatureMin"]];
+
+        FISDailyForecast *day = dailyForecastModels[1];
+        NSString *maxTemp = [NSString stringWithFormat:@"High: %.1fF", day.temperatureMax];
+        NSString *minTemp = [NSString stringWithFormat:@"Low: %.1fF", day.temperatureMin];
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.dayOneHighTemp.text = maxTemp;
             self.dayOneLowTemp.text = minTemp;
-            self.dayOneName.text = [format stringFromDate:dateTime];
+            self.dayOneName.text = [format stringFromDate:day.date];
         }];
 
-        NSDictionary *day = dailyForecast[2];
-        time = [day[@"time"] integerValue];
-        dateTime = [NSDate dateWithTimeIntervalSince1970:time];
-        maxTemp = [NSString stringWithFormat:@"High: %@F",day[@"temperatureMax"]];
-        minTemp = [NSString stringWithFormat:@"Low: %@F",day[@"temperatureMin"]];
+        day = dailyForecastModels[2];
+        maxTemp = [NSString stringWithFormat:@"High: %.1fF", day.temperatureMax];
+        minTemp = [NSString stringWithFormat:@"Low: %.1fF", day.temperatureMin];
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.dayTwoHighTemp.text = maxTemp;
             self.dayTwoLowTemp.text = minTemp;
-            self.dayTwoName.text = [format stringFromDate:dateTime];
+            self.dayTwoName.text = [format stringFromDate:day.date];
         }];
-        day = dailyForecast[3];
-        time = [day[@"time"] integerValue];
-        dateTime = [NSDate dateWithTimeIntervalSince1970:time];
-        maxTemp = [NSString stringWithFormat:@"High: %@F",day[@"temperatureMax"]];
-        minTemp = [NSString stringWithFormat:@"Low: %@F",day[@"temperatureMin"]];
+
+        day = dailyForecastModels[3];
+        maxTemp = [NSString stringWithFormat:@"High: %.1fF", day.temperatureMax];
+        minTemp = [NSString stringWithFormat:@"Low: %.1fF", day.temperatureMin];
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.dayThreeHighTemp.text = maxTemp;
             self.dayThreeLowTemp.text = minTemp;
-            self.dayThreeName.text = [format stringFromDate:dateTime];
+            self.dayThreeName.text = [format stringFromDate:day.date];
         }];
-        day = dailyForecast[4];
-        time = [day[@"time"] integerValue];
-        dateTime = [NSDate dateWithTimeIntervalSince1970:time];
-        maxTemp = [NSString stringWithFormat:@"High: %@F",day[@"temperatureMax"]];
-        minTemp = [NSString stringWithFormat:@"Low: %@F",day[@"temperatureMin"]];
+
+        day = dailyForecastModels[4];
+        maxTemp = [NSString stringWithFormat:@"High: %.1fF", day.temperatureMax];
+        minTemp = [NSString stringWithFormat:@"Low: %.1fF", day.temperatureMin];
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.dayFourHighTemp.text = maxTemp;
             self.dayFourLowTemp.text = minTemp;
-            self.dayFourName.text = [format stringFromDate:dateTime];
+            self.dayFourName.text = [format stringFromDate:day.date];
         }];
-        day = dailyForecast[5];
-        time = [day[@"time"] integerValue];
-        dateTime = [NSDate dateWithTimeIntervalSince1970:time];
-        maxTemp = [NSString stringWithFormat:@"High: %@F",day[@"temperatureMax"]];
-        minTemp = [NSString stringWithFormat:@"Low: %@F",day[@"temperatureMin"]];
+
+        day = dailyForecastModels[5];
+        maxTemp = [NSString stringWithFormat:@"High: %.1fF", day.temperatureMax];
+        minTemp = [NSString stringWithFormat:@"Low: %.1fF", day.temperatureMin];
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.dayFiveHighTemp.text = maxTemp;
             self.dayFiveLowTemp.text = minTemp;
-            self.dayFiveName.text = [format stringFromDate:dateTime];
+            self.dayFiveName.text = [format stringFromDate:day.date];
         }];
     }];
     
