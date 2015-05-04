@@ -24,4 +24,21 @@
     return self;
 }
 
+-(NSUInteger)hash
+{
+    return [self.date hash];
+}
+
+-(BOOL)isEqual:(id)object
+{
+    if(self == object) return YES;
+    if(![object isKindOfClass:self.class]) return NO;
+
+    FISDailyForecast *other = (FISDailyForecast *)object;
+
+    return [other.date isEqualToDate:self.date] &&
+           other.temperatureMin == self.temperatureMin &&
+           other.temperatureMax == self.temperatureMax;
+}
+
 @end
