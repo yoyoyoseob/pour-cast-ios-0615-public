@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FISDailyForecastView">
+            <connections>
+                <outlet property="containerView" destination="nHb-Gs-XqO" id="O0P-aW-rYd"/>
+                <outlet property="dayLabel" destination="DAK-a1-CWa" id="riJ-MY-Jao"/>
+                <outlet property="highLabel" destination="bw6-KA-8kP" id="Wqj-75-AsM"/>
+                <outlet property="lowLabel" destination="bYY-iu-5DJ" id="ltq-9d-t2F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nHb-Gs-XqO">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-a1-CWa">
+                    <rect key="frame" x="20" y="8" width="42" height="21"/>
+                    <accessibility key="accessibilityConfiguration" label="dayLabel"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw6-KA-8kP">
+                    <rect key="frame" x="20" y="37" width="42" height="21"/>
+                    <accessibility key="accessibilityConfiguration" label="highLabel"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYY-iu-5DJ">
+                    <rect key="frame" x="20" y="65" width="42" height="21"/>
+                    <accessibility key="accessibilityConfiguration" label="lowLabel"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DAK-a1-CWa" firstAttribute="top" secondItem="nHb-Gs-XqO" secondAttribute="top" constant="8" id="2kD-D2-ImX"/>
+                <constraint firstItem="bYY-iu-5DJ" firstAttribute="centerX" secondItem="nHb-Gs-XqO" secondAttribute="centerX" id="6i3-18-cZu"/>
+                <constraint firstItem="bYY-iu-5DJ" firstAttribute="top" secondItem="bw6-KA-8kP" secondAttribute="bottom" constant="8" id="8qd-3O-Nsp"/>
+                <constraint firstItem="DAK-a1-CWa" firstAttribute="centerX" secondItem="nHb-Gs-XqO" secondAttribute="centerX" id="DgG-rS-cPd"/>
+                <constraint firstItem="bw6-KA-8kP" firstAttribute="centerX" secondItem="nHb-Gs-XqO" secondAttribute="centerX" id="EkO-KQ-hGn"/>
+                <constraint firstItem="bw6-KA-8kP" firstAttribute="top" secondItem="DAK-a1-CWa" secondAttribute="bottom" constant="8" id="f6w-Fh-as5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="690" y="401.5"/>
+        </view>
+    </objects>
+</document>
